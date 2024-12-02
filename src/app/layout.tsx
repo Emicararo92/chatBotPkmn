@@ -25,10 +25,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <style>
+          {`
+            @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+          `}
+        </style>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <div>{children}</div>
       </body>
     </html>
   );
